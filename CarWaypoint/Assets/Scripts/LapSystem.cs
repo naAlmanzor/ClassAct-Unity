@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -27,5 +28,10 @@ public class LapSystem : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         currentLaps+=1;
+
+        if(currentLaps == 3)
+        {
+            SceneManager.LoadScene("LoadScene");
+        }
     }
 }
