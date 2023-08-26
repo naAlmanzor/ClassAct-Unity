@@ -6,7 +6,6 @@ public class Waypoints : MonoBehaviour
 {
     [Range (0f, 2f)]
     [SerializeField] private float waypointSize = 1f;
-    private GameObject child;
     private void OnDrawGizmos(){
         
         foreach(Transform t in transform)
