@@ -22,7 +22,7 @@ public class LapSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lapsDisplay.text = "Laps: " + currentLaps + "/" + totalLaps;
+        lapsDisplay.text = currentLaps + "/" + totalLaps;
     }
 
     private void OnTriggerEnter(Collider other)
